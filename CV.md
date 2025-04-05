@@ -1,11 +1,6 @@
 # Tiago Silvestre Condeixa
-// add picture
-Berlin, Germany
 
-[email](tscondeixa@gmail.com)
-
-[linkedin](www.linkedin.com/in/tiagocondeixa)
-
+Berlin, Germany [tscondeixa@gmail.com](tscondeixa@gmail.com) [linkedin](www.linkedin.com/in/tiagocondeixa)
 
 # About
 I’m a person that is self motivated every time there is a challenge.
@@ -23,7 +18,7 @@ whenever bring business or technology advantage.
 I’m a father, a husband, a son, a brother, a friend and I always find
 time for sightseeing, sports and cooking.
 
-# Experience
+# Work Experience
 
 ## Zalando (3 years 8 months)
 Berlin, Germany
@@ -91,40 +86,27 @@ delay-tolerant communication for embedded devices and network controllers.
 
 # Certifications
 
-- Linux Foundation: [Certified Kubernetes Application Developer](https://www.credly.com/badges/e453a458-8b9f-4691-b0ea-9afa00099d18)
-Issued Feb 2023 - Expires Feb 2026
+- Linux Foundation: [Certified Kubernetes Application
+Developer](https://www.credly.com/badges/e453a458-8b9f-4691-b0ea-9afa00099d18)
+(Issued Feb 2023 - Expires Feb 2026)
 
 - HashiCorp: [Certified Terraform
 Associate](https://www.credly.com/badges/55edd32e-4b41-464a-98da-46509ee7e717/linked_in_profile)
-Issued Jul 2020 - Expired Jul 2022
+(Issued Jul 2020 - Expired Jul 2022)
 
-- Amazon Web Services (AWS): [Solutions Architect Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/5L0GJR9C12BQ19KE)
-Issued Nov 2018 - Expired Nov 2020
+- Amazon Web Services (AWS): [Solutions Architect
+Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/5L0GJR9C12BQ19KE)
+(Issued Nov 2018 - Expired Nov 2020)
 
 
 # Education
 
-Universidade de Aveiro / University of Aveiro
-PhD in Electrical Engineering (2009 - 2014)
+University of Aveiro: PhD in Electrical Engineering (2009 - 2014)
 
-Orange Research
-Visiting Doctoral Researcher, Distributed Mobility Management (2012)
-
-Ecole nationale supérieure des Télécommunications de Bretagne
-Visiting PhD student, Distributed Mobility Management (2012)
-
-Universidade de Aveiro / University of Aveiro
-Master in Electronic and Telecommunications Engineering (2004 - 2009)
+University of Aveiro: Master in Electronic and Telecommunications Engineering (2004 - 2009)
 
 # Honors and Awards
 
 Ph.D. Scholarship: Issued by Portuguese National Science Foundation · Jan 2009
 
 Merit Scholarship 2008/2009: One of the best students of the year in  the University of Aveiro
-
-# Languages
-
-- Portuguese (Native or Bilingual)
-- English (Full Professional)
-- Spanish (Limited Working)
-- German (Elementary)
