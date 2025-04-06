@@ -9,7 +9,8 @@ Berlin, Germany [tscondeixa@gmail.com](tscondeixa@gmail.com)
 
 ## Skills
 
-| ------------------------- | ---- |
+|                           |       |
+| :------------------------ | ----: |
 | Go, Python, Bash and C | AWS, Kubernetes and Docker |
 
 Terraform and Cloudformation
