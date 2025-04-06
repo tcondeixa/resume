@@ -1,9 +1,10 @@
 # Tiago Silvestre Condeixa
 
- Berlin, Germany [tscondeixa@gmail.com](tscondeixa@gmail.com)
- [linkedin.com/in/tiagocondeixa](linkedin.com/in/tiagocondeixa)
-
 Infrastructure/Platform Software Engineer with 10+ years of experience.
+
+Berlin, Germany          [tscondeixa@gmail.com](tscondeixa@gmail.com)
+          [linkedin.com/in/tiagocondeixa](linkedin.com/in/tiagocondeixa)
+
 
 ## Skills
 
@@ -22,6 +23,7 @@ Github, Git and Neovim
 ## Experience
 
 ### Zalando: Senior Software Engineer (Cloud Infrastructure)
+
 Berlin, Germany, August 2021 - Present
 
 As part of Cloud Infrastructure team I'm responsible for operating, improving
@@ -32,6 +34,7 @@ compliance of the platform and reduce toil for the many developers interacting
 with the platform on a daily basis.
 
 ### Zenjob: Senior Software Engineer (Platform)
+
 Berlin, Germany, January 2019 - July 2021
 
 - Provided Jenkins CI/CD in Kubernetes for 50+ Developers and 30+ microservices,
@@ -44,19 +47,21 @@ and ensure out-of-the-box best practices for 60+ developers.
 - Developed a Python CLI to simplify the daily tasks for 50+ Developers.
 
 ### Veniam
+
 Porto, Portugal, September 2014 - December 2018
 
-#### Infrastructure Software Engineer
+#### Software Engineer (Infrastructure)
+
 April 2017 - December 2018
 
 - Define, manage and automate the entire Infrastructure/Platform (cloud,
 network and embedded)
-
 - through Infrastructure as Code, software release
 management, configurations management, CI/CD pipelines, security,
 monitoring/alerting.
 
 #### Systems Engineer
+
 September 2014 - March 2017
 
 - Defined and implemented the network that connects moving vehicles (embedded devices),
