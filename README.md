@@ -1,13 +1,13 @@
 # Tiago Silvestre Condeixa
 
-Infrastructure/Platform Software Engineer with 10+ years of experience.
+Infrastructure/Platform Software Engineer with 10+ years of Industry experience.
 
-Berlin, Germany [tscondeixa@gmail.com](tscondeixa@gmail.com)
-[linkedin.com/in/tiagocondeixa](linkedin.com/in/tiagocondeixa)
+Berlin, Germany | [tscondeixa@gmail.com](tscondeixa@gmail.com)
+| (+351) 916064732 | [linkedin](linkedin.com/in/tiagocondeixa)
 
 ---
 
-## Skills
+### Skills
 
 Go, Python, Bash and C
 
@@ -17,12 +17,15 @@ Grafana, Prometheus, Lightstep, Loki and Opsgenie
 
 Jenkins, Github, Git and Neovim
 
-## Experience
+### Experience
 
-### Zalando
+#### Zalando
 
-**Senior Software Engineer (Cloud Infrastructure)**
-_Berlin, Germany, August 2021 - Present_
+_Berlin, Germany_
+
+##### Senior Software Engineer (Cloud Infrastructure)
+
+_August 2021 - Present_
 
 As part of Cloud Infrastructure team I'm responsible for operating, improving
 and extending the AWS infrastructure that is supporting more than 250
@@ -31,10 +34,12 @@ to continuously improve the user experience, cost efficiency, reliability and
 compliance of the platform and reduce toil for the many developers interacting
 with the platform on a daily basis.
 
-### Zenjob
+#### Zenjob
+
+_Berlin, Germany_
 
 **Senior Software Engineer (Platform)**
-_Berlin, Germany, January 2019 - July 2021_
+<p align="right">*January 2019 - July 2021*</p>
 
 - Provided Jenkins CI/CD in Kubernetes for 50+ Developers and 30+ microservices,
 including abstractions in Groovy to deploy all common use-cases.
@@ -45,10 +50,12 @@ out-of-the-box Observability with Loki, Prometheus, Jagger and Grafana.
 and ensure out-of-the-box best practices for 60+ developers.
 - Developed a Python CLI to simplify the daily tasks for 50+ Developers.
 
-### Veniam
+#### Veniam
+
+_Porto, Portugal_
 
 **Software Engineer (Infrastructure)**
-_Porto, Portugal, April 2017 - December 2018_
+_April 2017 - December 2018_
 
 - Define, manage and automate the entire Infrastructure/Platform (cloud,
 network and embedded)
@@ -57,7 +64,7 @@ management, configurations management, CI/CD pipelines, security,
 monitoring/alerting.
 
 **Systems Engineer**
-_Port, Portugal, September 2014 - March 2017_
+_September 2014 - March 2017_
 
 - Defined and implemented the network that connects moving vehicles (embedded devices),
 network controllers and linux servers.
@@ -66,7 +73,7 @@ delay-tolerant communication for embedded devices and network controllers.
 
 ---
 
-## Certifications
+### Certifications
 
 Linux Foundation: [Certified Kubernetes Application
 Developer](https://www.credly.com/badges/e453a458-8b9f-4691-b0ea-9afa00099d18)
@@ -80,13 +87,13 @@ Amazon Web Services (AWS): [Solutions Architect
 Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/5L0GJR9C12BQ19KE)
 (Issued Nov 2018 - Expired Nov 2020)
 
-## Education
+### Education
 
 University of Aveiro: PhD in Electrical Engineering (2009 - 2014)
 
 University of Aveiro: MSc in Electronic and Telecommunications Engineering (2004 - 2009)
 
-## Awards
+### Awards
 
 PhD Scholarship: Issued by Portuguese National Science Foundation on Jan 2009
 
