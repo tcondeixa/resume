@@ -9,19 +9,13 @@ Berlin, Germany [tscondeixa@gmail.com](tscondeixa@gmail.com)
 
 ## Skills
 
-|                           |       |
-| :------------------------ | ----: |
-| Go, Python, Bash and C | AWS, Kubernetes and Docker |
+Go, Python, Bash and C
 
-Terraform and Cloudformation
+AWS, Kubernetes, Docker, Terraform and Cloudformation
 
-Grafana, Prometheus, Lightstep, Loki, Opsgenie
+Grafana, Prometheus, Lightstep, Loki and Opsgenie
 
-Jenkins and Github actions
-
-Github, Git and Neovim
-
----
+Jenkins, Github, Git and Neovim
 
 ## Experience
 
