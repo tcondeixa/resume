@@ -9,9 +9,8 @@ Berlin, Germany [tscondeixa@gmail.com](tscondeixa@gmail.com)
 
 ## Skills
 
-Go, Python, Bash and C
-
-AWS, Kubernetes and Docker
+| ------------------------- | ---- |
+| Go, Python, Bash and C | AWS, Kubernetes and Docker |
 
 Terraform and Cloudformation
 
@@ -88,8 +87,6 @@ Amazon Web Services (AWS): [Solutions Architect
 Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/5L0GJR9C12BQ19KE)
 (Issued Nov 2018 - Expired Nov 2020)
 
----
-
 ## Education
 
 University of Aveiro: PhD in Electrical Engineering (2009 - 2014)
@@ -98,6 +95,6 @@ University of Aveiro: MSc in Electronic and Telecommunications Engineering (2004
 
 ## Awards
 
-Ph.D. Scholarship: Issued by Portuguese National Science Foundation · Jan 2009
+PhD Scholarship: Issued by Portuguese National Science Foundation on Jan 2009
 
-Merit Scholarship 2008/2009: One of the best students of the year in  the University of Aveiro
+Merit Scholarship: One of the best students of 2008/2009 in the University of Aveiro
