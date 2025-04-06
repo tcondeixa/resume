@@ -19,9 +19,10 @@ Jenkins, Github, Git and Neovim
 
 ## Experience
 
-### Zalando: Senior Software Engineer (Cloud Infrastructure)
+### Zalando
 
-[Context: "Berlin, Germany, August 2021 - Present"]
+**Senior Software Engineer (Cloud Infrastructure)**
+_Berlin, Germany, August 2021 - Present_
 
 As part of Cloud Infrastructure team I'm responsible for operating, improving
 and extending the AWS infrastructure that is supporting more than 250
@@ -30,9 +31,10 @@ to continuously improve the user experience, cost efficiency, reliability and
 compliance of the platform and reduce toil for the many developers interacting
 with the platform on a daily basis.
 
-### Zenjob: Senior Software Engineer (Platform)
+### Zenjob
 
-Berlin, Germany, January 2019 - July 2021
+**Senior Software Engineer (Platform)**
+_Berlin, Germany, January 2019 - July 2021_
 
 - Provided Jenkins CI/CD in Kubernetes for 50+ Developers and 30+ microservices,
 including abstractions in Groovy to deploy all common use-cases.
@@ -45,10 +47,8 @@ and ensure out-of-the-box best practices for 60+ developers.
 
 ### Veniam
 
-_Porto, Portugal, September 2014 - December 2018_
-
 **Software Engineer (Infrastructure)**
-_April 2017 - December 2018_
+_Porto, Portugal, April 2017 - December 2018_
 
 - Define, manage and automate the entire Infrastructure/Platform (cloud,
 network and embedded)
@@ -57,7 +57,7 @@ management, configurations management, CI/CD pipelines, security,
 monitoring/alerting.
 
 **Systems Engineer**
-_September 2014 - March 2017_
+_Port, Portugal, September 2014 - March 2017_
 
 - Defined and implemented the network that connects moving vehicles (embedded devices),
 network controllers and linux servers.
