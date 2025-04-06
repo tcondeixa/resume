@@ -1,9 +1,7 @@
-## *Tiago Silvestre Condeixa*
+# Tiago Silvestre Condeixa
 
 Berlin, Germany  |  [tscondeixa@gmail.com](tscondeixa@gmail.com)  |
 (+351) 916064732  |  [linkedin](linkedin.com/in/tiagocondeixa)
-
-Infrastructure/Platform Software Engineer with 10+ years of Industry experience.
 
 ---
 
@@ -63,16 +61,16 @@ delay-tolerant communication for embedded devices and network controllers.
 
 ---
 
-#### Education
+### Education
 
-**University of Aveiro**
+#### University of Aveiro, Portugal
 
 - PhD in Electrical Engineering (2009 - 2014).
 *PhD Scholarship* issued by Portuguese National Science Foundation.
 - MSc in Electronic and Telecommunications Engineering (2004 - 2009).
 *Merit Scholarship* as one of the best students of 2008/2009.
 
-#### Certifications
+### Certifications
 
 Linux Foundation: [Certified Kubernetes Application
 Developer](https://www.credly.com/badges/e453a458-8b9f-4691-b0ea-9afa00099d18)
