@@ -1,4 +1,5 @@
 name: Markdown to PDF
+on: push
 jobs:
   convertToPdf:
     name: Build PDF
