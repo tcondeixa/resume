@@ -1,9 +1,9 @@
-# Tiago Silvestre Condeixa
-
-Infrastructure/Platform Software Engineer with 10+ years of Industry experience.
+## *Tiago Silvestre Condeixa*
 
 Berlin, Germany  |  [tscondeixa@gmail.com](tscondeixa@gmail.com)  |
 (+351) 916064732  |  [linkedin](linkedin.com/in/tiagocondeixa)
+
+Infrastructure/Platform Software Engineer with 10+ years of Industry experience.
 
 ---
 
@@ -33,8 +33,7 @@ with the platform on a daily basis.
 _Berlin, Germany_
 
 **Senior Software Engineer (Platform)**
-<p align="right">__January 2019 - July 2021__</p>
-<div style="text-align: right">__January 2019 - July 2021__</div>
+_January 2019 - July 2021_
 
 - Provided Jenkins CI/CD in Kubernetes for 50+ Developers and 30+ microservices,
 including abstractions in Groovy to deploy all common use-cases.
@@ -67,6 +66,18 @@ delay-tolerant communication for embedded devices and network controllers.
 
 ---
 
+### Education
+
+University of Aveiro: PhD in Electrical Engineering (2009 - 2014)
+
+University of Aveiro: MSc in Electronic and Telecommunications Engineering (2004 - 2009)
+
+#### Awards
+
+PhD Scholarship: Issued by Portuguese National Science Foundation on Jan 2009
+
+Merit Scholarship: One of the best students of 2008/2009 in the University of Aveiro
+
 ### Certifications
 
 Linux Foundation: [Certified Kubernetes Application
@@ -80,15 +91,3 @@ Associate](https://www.credly.com/badges/55edd32e-4b41-464a-98da-46509ee7e717/li
 Amazon Web Services (AWS): [Solutions Architect
 Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/5L0GJR9C12BQ19KE)
 (Issued Nov 2018 - Expired Nov 2020)
-
-### Education
-
-University of Aveiro: PhD in Electrical Engineering (2009 - 2014)
-
-University of Aveiro: MSc in Electronic and Telecommunications Engineering (2004 - 2009)
-
-### Awards
-
-PhD Scholarship: Issued by Portuguese National Science Foundation on Jan 2009
-
-Merit Scholarship: One of the best students of 2008/2009 in the University of Aveiro
