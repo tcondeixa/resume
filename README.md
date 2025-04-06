@@ -12,9 +12,9 @@ Go | Python | Bash | C | Lua | Rego | Javacript/Typescript
 AWS | Kubernetes | Docker | Terraform | PostgreSQL | Grafana | Prometheus |
 Lightstep | Nobl9 | Loki | Jenkins | Opsgenie | OPA | Github | Git | Neovim
 
-### Experience
+## Experience
 
-#### Zalando *Berlin, Germany*
+### Zalando *Berlin, Germany*
 
 **Senior Software Engineer (Cloud Infrastructure)**
 *August 2021 - Present*
@@ -26,7 +26,7 @@ to continuously improve the user experience, cost efficiency, reliability and
 - compliance of the platform and reduce toil for the many developers interacting
 with the platform on a daily basis.
 
-#### Zenjob *Berlin, Germany*
+### Zenjob *Berlin, Germany*
 
 **Senior Software Engineer (Platform)**
 *January 2019 - July 2021*
@@ -40,7 +40,7 @@ out-of-the-box Observability with Loki, Prometheus, Jagger and Grafana.
 and ensure out-of-the-box best practices for 60+ developers.
 - Developed a Python CLI to simplify the daily tasks for 50+ Developers.
 
-#### Veniam *Porto, Portugal*
+### Veniam *Porto, Portugal*
 
 **Software Engineer (Infrastructure)**
 *April 2017 - December 2018*
