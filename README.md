@@ -14,7 +14,7 @@ Lightstep | Nobl9 | Loki | Jenkins | Opsgenie | OPA | Github | Git | Neovim
 
 ## Experience
 
-### Zalando *Berlin, Germany*
+### Zalando
 
 **Senior Software Engineer (Cloud Infrastructure)**
 *August 2021 - Present*
@@ -26,7 +26,7 @@ to continuously improve the user experience, cost efficiency, reliability and
 - compliance of the platform and reduce toil for the many developers interacting
 with the platform on a daily basis.
 
-### Zenjob *Berlin, Germany*
+### Zenjob
 
 **Senior Software Engineer (Platform)**
 *January 2019 - July 2021*
@@ -40,7 +40,7 @@ out-of-the-box Observability with Loki, Prometheus, Jagger and Grafana.
 and ensure out-of-the-box best practices for 60+ developers.
 - Developed a Python CLI to simplify the daily tasks for 50+ Developers.
 
-### Veniam *Porto, Portugal*
+### Veniam
 
 **Software Engineer (Infrastructure)**
 *April 2017 - December 2018*
@@ -61,25 +61,25 @@ delay-tolerant communication for embedded devices and network controllers.
 
 ---
 
-### Education
+### Education and Certifications
 
 #### University of Aveiro, Portugal
 
-- PhD in Electrical Engineering (2009 - 2014).
+- PhD in Electrical Engineering (2009 - 2014) with a
 *PhD Scholarship* issued by Portuguese National Science Foundation.
-- MSc in Electronic and Telecommunications Engineering (2004 - 2009).
-*Merit Scholarship* as one of the best students of 2008/2009.
+- MSc in Electronic and Telecommunications Engineering (2004 - 2009)
+with a *Merit Scholarship* as one of the best students of 2008/2009.
 
-### Certifications
+#### Certifications
 
-Linux Foundation: [Certified Kubernetes Application
+- Linux Foundation: [Certified Kubernetes Application
 Developer](https://www.credly.com/badges/e453a458-8b9f-4691-b0ea-9afa00099d18)
 (Issued Feb 2023 - Expires Feb 2026)
 
-HashiCorp: [Certified Terraform
+- HashiCorp: [Certified Terraform
 Associate](https://www.credly.com/badges/55edd32e-4b41-464a-98da-46509ee7e717/linked_in_profile)
 (Issued Jul 2020 - Expired Jul 2022)
 
-Amazon Web Services (AWS): [Solutions Architect
+- Amazon Web Services (AWS): [Solutions Architect
 Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/5L0GJR9C12BQ19KE)
 (Issued Nov 2018 - Expired Nov 2020)
