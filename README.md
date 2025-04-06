@@ -2,9 +2,10 @@
 
 Infrastructure/Platform Software Engineer with 10+ years of experience.
 
-Berlin, Germany          [tscondeixa@gmail.com](tscondeixa@gmail.com)
-          [linkedin.com/in/tiagocondeixa](linkedin.com/in/tiagocondeixa)
+Berlin, Germany [tscondeixa@gmail.com](tscondeixa@gmail.com)
+[linkedin.com/in/tiagocondeixa](linkedin.com/in/tiagocondeixa)
 
+---
 
 ## Skills
 
@@ -19,6 +20,8 @@ Grafana, Prometheus, Lightstep, Loki, Opsgenie
 Jenkins and Github actions
 
 Github, Git and Neovim
+
+---
 
 ## Experience
 
@@ -69,6 +72,8 @@ network controllers and linux servers.
 - Developed software solutions regarding mobility management, multihoming and
 delay-tolerant communication for embedded devices and network controllers.
 
+---
+
 ## Certifications
 
 Linux Foundation: [Certified Kubernetes Application
@@ -83,6 +88,7 @@ Amazon Web Services (AWS): [Solutions Architect
 Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/5L0GJR9C12BQ19KE)
 (Issued Nov 2018 - Expired Nov 2020)
 
+---
 
 ## Education
 
