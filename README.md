@@ -31,14 +31,18 @@ with the platform on a daily basis.
 **Senior Software Engineer (Platform)**
 *January 2019 - July 2021*
 
-- Provided Jenkins CI/CD in Kubernetes for 50+ Developers and 30+ microservices,
+- Provided Jenkins CI/CD for 100+ Engineers and 50+ Microservices,
 including abstractions in Groovy to deploy all common use-cases.
-- Provisioned and maintained Kubernetes Cluster with AWS EKS and
+- **Deployed** and **maintained** Kubernetes Clusters (AWS EKS and Istio) and
 out-of-the-box Observability with Loki, Prometheus, Jagger and Grafana.
-- Lead the Migration of 30+ microservices to Kubernetes with no downtime.
-- Introduced centrally provided Terraform modules to abstract complexity
-and ensure out-of-the-box best practices for 60+ developers.
-- Developed a Python CLI to simplify the daily tasks for 50+ Developers.
+- **Lead** the migration of 50+ Microservices to new Kubernetes clusters (AWS EKS and Istio)
+with no downtime and with residual Engineers effort, increasing the deployment frequency by 100%.
+- **Introduced** centrally provided Terraform modules to abstract complexity
+and ensure out-of-the-box best practices for 100+ Engineers,
+reducing by 500% the time to create new Microservices and by 100% the time to
+add new resources to the existing Microservices.
+- Developed a Python CLI to simplify the daily tasks for 100+ Engineers,
+saving 300+ hours per month of Engineers time.
 
 ### Veniam
 
@@ -65,10 +69,10 @@ delay-tolerant communication for embedded devices and network controllers.
 
 #### University of Aveiro, Portugal
 
-- PhD in Electrical Engineering (2009 - 2014) with a
-*PhD Scholarship* issued by Portuguese National Science Foundation.
-- MSc in Electronic and Telecommunications Engineering (2004 - 2009)
-with a *Merit Scholarship* as one of the best students of 2008/2009.
+- **PhD** in Electrical Engineering (2009 - 2014) with a
+**PhD Scholarship** issued by Portuguese National Science Foundation.
+- **MSc** in Electronic and Telecommunications Engineering (2004 - 2009)
+with a **Merit Scholarship** as one of the best students of 2008/2009.
 
 #### Certifications
 
