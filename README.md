@@ -21,7 +21,7 @@ Jenkins, Github, Git and Neovim
 
 ### Zalando: Senior Software Engineer (Cloud Infrastructure)
 
-Berlin, Germany, August 2021 - Present
+[Context: "Berlin, Germany, August 2021 - Present"]
 
 As part of Cloud Infrastructure team I'm responsible for operating, improving
 and extending the AWS infrastructure that is supporting more than 250
@@ -45,11 +45,10 @@ and ensure out-of-the-box best practices for 60+ developers.
 
 ### Veniam
 
-Porto, Portugal, September 2014 - December 2018
+_Porto, Portugal, September 2014 - December 2018_
 
-#### Software Engineer (Infrastructure)
-
-April 2017 - December 2018
+**Software Engineer (Infrastructure)**
+_April 2017 - December 2018_
 
 - Define, manage and automate the entire Infrastructure/Platform (cloud,
 network and embedded)
@@ -57,9 +56,8 @@ network and embedded)
 management, configurations management, CI/CD pipelines, security,
 monitoring/alerting.
 
-#### Systems Engineer
-
-September 2014 - March 2017
+**Systems Engineer**
+_September 2014 - March 2017_
 
 - Defined and implemented the network that connects moving vehicles (embedded devices),
 network controllers and linux servers.
