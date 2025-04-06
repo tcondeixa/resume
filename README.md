@@ -16,11 +16,10 @@ Lightstep | Nobl9 | Loki | Jenkins | Opsgenie | OPA | Github | Git | Neovim
 
 ### Experience
 
-#### Zalando
-_Berlin, Germany_
+#### Zalando *Berlin, Germany*
 
 **Senior Software Engineer (Cloud Infrastructure)**
-_August 2021 - Present_
+*August 2021 - Present*
 
 - As part of Cloud Infrastructure team I'm responsible for operating, improving
 and extending the AWS infrastructure that is supporting more than 250
@@ -29,11 +28,10 @@ to continuously improve the user experience, cost efficiency, reliability and
 - compliance of the platform and reduce toil for the many developers interacting
 with the platform on a daily basis.
 
-#### Zenjob
-_Berlin, Germany_
+#### Zenjob *Berlin, Germany*
 
 **Senior Software Engineer (Platform)**
-_January 2019 - July 2021_
+*January 2019 - July 2021*
 
 - Provided Jenkins CI/CD in Kubernetes for 50+ Developers and 30+ microservices,
 including abstractions in Groovy to deploy all common use-cases.
@@ -44,11 +42,10 @@ out-of-the-box Observability with Loki, Prometheus, Jagger and Grafana.
 and ensure out-of-the-box best practices for 60+ developers.
 - Developed a Python CLI to simplify the daily tasks for 50+ Developers.
 
-#### Veniam
-_Porto, Portugal_
+#### Veniam *Porto, Portugal*
 
 **Software Engineer (Infrastructure)**
-_April 2017 - December 2018_
+*April 2017 - December 2018*
 
 - Define, manage and automate the entire Infrastructure/Platform (cloud,
 network and embedded)
@@ -57,7 +54,7 @@ management, configurations management, CI/CD pipelines, security,
 monitoring/alerting.
 
 **Systems Engineer**
-_September 2014 - March 2017_
+*September 2014 - March 2017*
 
 - Defined and implemented the network that connects moving vehicles (embedded devices),
 network controllers and linux servers.
@@ -66,19 +63,16 @@ delay-tolerant communication for embedded devices and network controllers.
 
 ---
 
-### Education
+#### Education
 
-University of Aveiro: PhD in Electrical Engineering (2009 - 2014)
+**University of Aveiro**
 
-University of Aveiro: MSc in Electronic and Telecommunications Engineering (2004 - 2009)
+- PhD in Electrical Engineering (2009 - 2014).
+*PhD Scholarship* issued by Portuguese National Science Foundation.
+- MSc in Electronic and Telecommunications Engineering (2004 - 2009).
+*Merit Scholarship* as one of the best students of 2008/2009.
 
-#### Awards
-
-PhD Scholarship: Issued by Portuguese National Science Foundation on Jan 2009
-
-Merit Scholarship: One of the best students of 2008/2009 in the University of Aveiro
-
-### Certifications
+#### Certifications
 
 Linux Foundation: [Certified Kubernetes Application
 Developer](https://www.credly.com/badges/e453a458-8b9f-4691-b0ea-9afa00099d18)
