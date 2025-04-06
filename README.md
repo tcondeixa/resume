@@ -2,44 +2,39 @@
 
 Infrastructure/Platform Software Engineer with 10+ years of Industry experience.
 
-Berlin, Germany | [tscondeixa@gmail.com](tscondeixa@gmail.com)
-| (+351) 916064732 | [linkedin](linkedin.com/in/tiagocondeixa)
+Berlin, Germany  |  [tscondeixa@gmail.com](tscondeixa@gmail.com)  |
+(+351) 916064732  |  [linkedin](linkedin.com/in/tiagocondeixa)
 
 ---
 
 ### Skills
 
-Go, Python, Bash and C
+Go | Python | Bash | C | Lua | Rego | Javacript/Typescript
 
-AWS, Kubernetes, Docker, Terraform and Cloudformation
-
-Grafana, Prometheus, Lightstep, Loki and Opsgenie
-
-Jenkins, Github, Git and Neovim
+AWS | Kubernetes | Docker | Terraform | PostgreSQL | Grafana | Prometheus |
+Lightstep | Nobl9 | Loki | Jenkins | Opsgenie | OPA | Github | Git | Neovim
 
 ### Experience
 
 #### Zalando
-
 _Berlin, Germany_
 
-##### Senior Software Engineer (Cloud Infrastructure)
-
+**Senior Software Engineer (Cloud Infrastructure)**
 _August 2021 - Present_
 
-As part of Cloud Infrastructure team I'm responsible for operating, improving
+- As part of Cloud Infrastructure team I'm responsible for operating, improving
 and extending the AWS infrastructure that is supporting more than 250
-delivery teams and thousands of applications within Zalando. I'm helping
+- delivery teams and thousands of applications within Zalando. I'm helping
 to continuously improve the user experience, cost efficiency, reliability and
-compliance of the platform and reduce toil for the many developers interacting
+- compliance of the platform and reduce toil for the many developers interacting
 with the platform on a daily basis.
 
 #### Zenjob
-
 _Berlin, Germany_
 
 **Senior Software Engineer (Platform)**
-<p align="right">*January 2019 - July 2021*</p>
+<p align="right">__January 2019 - July 2021__</p>
+<div style="text-align: right">__January 2019 - July 2021__</div>
 
 - Provided Jenkins CI/CD in Kubernetes for 50+ Developers and 30+ microservices,
 including abstractions in Groovy to deploy all common use-cases.
@@ -51,7 +46,6 @@ and ensure out-of-the-box best practices for 60+ developers.
 - Developed a Python CLI to simplify the daily tasks for 50+ Developers.
 
 #### Veniam
-
 _Porto, Portugal_
 
 **Software Engineer (Infrastructure)**
