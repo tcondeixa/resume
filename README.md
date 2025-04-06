@@ -1,25 +1,30 @@
 # Tiago Silvestre Condeixa
 
-[tscondeixa@gmail.com](tscondeixa@gmail.com)
-
-Berlin, Germany
-
-[linkedin.com/in/tiagocondeixa](linkedin.com/in/tiagocondeixa)
+ Berlin, Germany [tscondeixa@gmail.com](tscondeixa@gmail.com)
+ [linkedin.com/in/tiagocondeixa](linkedin.com/in/tiagocondeixa)
 
 Infrastructure/Platform Software Engineer with 10+ years of experience.
 
-# Skills
+## Skills
 
-- Go, Python, Bash and C
-- AWS, Kubernetes and Docker
-- Terraform and Cloudformation
-- Github, Git and Neovim
-- Grafana, Prometheus and Loki
-- Jenkins and Github actions
+### Programming Languages
 
-# Experience
+Go, Python, Bash and C
 
-## Zalando: Senior Software Engineer (Cloud Infrastructure)
+### Technologies
+
+- Infrastructure: AWS, Kubernetes and Docker
+- Infrastructure as Code: Terraform and Cloudformation
+- Observability: Grafana, Prometheus and Loki
+- CI/CD: Jenkins and Github actions
+
+### Tools
+
+Github, Git and Neovim
+
+## Experience
+
+### Zalando: Senior Software Engineer (Cloud Infrastructure)
 Berlin, Germany, August 2021 - Present
 
 As part of Cloud Infrastructure team I'm responsible for operating, improving
@@ -29,7 +34,7 @@ to continuously improve the user experience, cost efficiency, reliability and
 compliance of the platform and reduce toil for the many developers interacting
 with the platform on a daily basis.
 
-## Zenjob: Senior Software Engineer (Platform)
+### Zenjob: Senior Software Engineer (Platform)
 Berlin, Germany, January 2019 - July 2021
 
 - Provided Jenkins CI/CD in Kubernetes for 60+ Developers,
@@ -44,10 +49,10 @@ Code, CI/CD, tools and templates/modules for development teams. Actively
 contributing to improve the development process and the overall System
 Architecture reliability
 
-## Veniam: Senior Software Engineer
+### Veniam: Senior Software Engineer
 Porto, Portugal
 
-### Senior Software Engineer (Infrastructure)
+#### Senior Software Engineer (Infrastructure)
 April 2017 - December 2018
 
 Define, manage and automate the entire Infrastructure/Platform (cloud,
@@ -55,7 +60,7 @@ network and embedded) through Infrastructure as Code, software release
 management, configurations management, CI/CD pipelines, security,
 monitoring/alerting.
 
-### Systems Engineer (Network)
+#### Systems Engineer (Network)
 September 2014 - March 2017
 
 - Defined and implemented the network that connects moving vehicles (embedded devices),
@@ -63,7 +68,7 @@ network controllers and linux servers.
 - Developed software solutions regarding mobility management, multihoming and
 delay-tolerant communication for embedded devices and network controllers.
 
-# Certifications
+## Certifications
 
 - Linux Foundation: [Certified Kubernetes Application
 Developer](https://www.credly.com/badges/e453a458-8b9f-4691-b0ea-9afa00099d18)
@@ -78,13 +83,13 @@ Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/5L0GJR9
 (Issued Nov 2018 - Expired Nov 2020)
 
 
-# Education
+## Education
 
 University of Aveiro: PhD in Electrical Engineering (2009 - 2014)
 
-University of Aveiro: Master in Electronic and Telecommunications Engineering (2004 - 2009)
+University of Aveiro: MSc in Electronic and Telecommunications Engineering (2004 - 2009)
 
-# Honors and Awards
+## Awards
 
 Ph.D. Scholarship: Issued by Portuguese National Science Foundation · Jan 2009
 
