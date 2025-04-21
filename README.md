@@ -1,4 +1,4 @@
-# Tiago Silvestre Condeixa
+## Tiago Silvestre Condeixa
 
 Berlin, Germany  |  [tscondeixa@gmail.com](mailto:tscondeixa@gmail.com)  |
 (+351) 916064732  |  [linkedin](https://www.linkedin.com/in/tiagocondeixa/)
@@ -9,17 +9,15 @@ Berlin, Germany  |  [tscondeixa@gmail.com](mailto:tscondeixa@gmail.com)  |
 
 Go | Python | Bash | C | Lua | Rego | Javacript/Typescript
 
-AWS | Kubernetes | Docker | Terraform | PostgreSQL | Grafana | Prometheus |
-Lightstep | Nobl9 | Loki | Jenkins | OPA | Github | Git
+AWS | Kubernetes | Docker | Terraform | PostgreSQL | Grafana | Prometheus | Lightstep | Nobl9 | Loki |
+Jenkins | OPA | Github | Git
 
-## Experience
+### Experience
 
-### Zalando
+#### Zalando
 
-**Senior Software Engineer (Cloud Infrastructure)**                          *August 2021 - Present*
-
-| **left** | **right** |
-| :------------ | -------------: |
+**Senior Software Engineer (Cloud Infrastructure)**
+: *August 2021 - Present*
 
 - As part of Cloud Infrastructure team I'm responsible for operating, improving
 and extending the AWS infrastructure that is supporting more than 250
@@ -28,9 +26,10 @@ to continuously improve the user experience, cost efficiency, reliability and
 - compliance of the platform and reduce toil for the many developers interacting
 with the platform on a daily basis.
 
-### Zenjob
+#### Zenjob
 
-**Senior Software Engineer (Platform)**                                   *January 2019 - July 2021*
+**Senior Software Engineer (Platform)**
+: *January 2019 - July 2021*
 
 - Provided Jenkins CI/CD for 100+ Engineers and 50+ Microservices,
 including abstractions in Groovy to deploy all common use-cases.
@@ -45,9 +44,10 @@ add new resources to the existing Microservices.
 - Developed a Python CLI to simplify the daily tasks for 100+ Engineers,
 saving 300+ hours per month of Engineers time.
 
-### Veniam
+#### Veniam
 
-**Software Engineer (Infrastructure)**                                  *April 2017 - December 2018*
+**Software Engineer (Infrastructure)**
+: *April 2017 - December 2018*
 
 - Define, manage and automate the entire Infrastructure/Platform (cloud,
 network and embedded)
