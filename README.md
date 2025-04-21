@@ -1,7 +1,7 @@
 # Tiago Silvestre Condeixa
 
-Berlin, Germany  |  [tscondeixa@gmail.com](tscondeixa@gmail.com)  |
-(+351) 916064732  |  [linkedin](linkedin.com/in/tiagocondeixa)
+Berlin, Germany  |  [tscondeixa@gmail.com](mailto:tscondeixa@gmail.com)  |
+(+351) 916064732  |  [linkedin](https://www.linkedin.com/in/tiagocondeixa/)
 
 ---
 
@@ -17,6 +17,9 @@ Lightstep | Nobl9 | Loki | Jenkins | OPA | Github | Git
 ### Zalando
 
 **Senior Software Engineer (Cloud Infrastructure)**                          *August 2021 - Present*
+
+| **left** | **right** |
+| :------------ | -------------: |
 
 - As part of Cloud Infrastructure team I'm responsible for operating, improving
 and extending the AWS infrastructure that is supporting more than 250
