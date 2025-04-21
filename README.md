@@ -10,14 +10,13 @@ Berlin, Germany  |  [tscondeixa@gmail.com](tscondeixa@gmail.com)  |
 Go | Python | Bash | C | Lua | Rego | Javacript/Typescript
 
 AWS | Kubernetes | Docker | Terraform | PostgreSQL | Grafana | Prometheus |
-Lightstep | Nobl9 | Loki | Jenkins | Opsgenie | OPA | Github | Git | Neovim
+Lightstep | Nobl9 | Loki | Jenkins | OPA | Github | Git
 
 ## Experience
 
 ### Zalando
 
-**Senior Software Engineer (Cloud Infrastructure)**
-*August 2021 - Present*
+**Senior Software Engineer (Cloud Infrastructure)**                          *August 2021 - Present*
 
 - As part of Cloud Infrastructure team I'm responsible for operating, improving
 and extending the AWS infrastructure that is supporting more than 250
@@ -28,8 +27,7 @@ with the platform on a daily basis.
 
 ### Zenjob
 
-**Senior Software Engineer (Platform)**
-*January 2019 - July 2021*
+**Senior Software Engineer (Platform)**                                   *January 2019 - July 2021*
 
 - Provided Jenkins CI/CD for 100+ Engineers and 50+ Microservices,
 including abstractions in Groovy to deploy all common use-cases.
@@ -46,8 +44,7 @@ saving 300+ hours per month of Engineers time.
 
 ### Veniam
 
-**Software Engineer (Infrastructure)**
-*April 2017 - December 2018*
+**Software Engineer (Infrastructure)**                                  *April 2017 - December 2018*
 
 - Define, manage and automate the entire Infrastructure/Platform (cloud,
 network and embedded)
@@ -55,8 +52,7 @@ network and embedded)
 management, configurations management, CI/CD pipelines, security,
 monitoring/alerting.
 
-**Systems Engineer**
-*September 2014 - March 2017*
+**Systems Engineer**                                                   *September 2014 - March 2017*
 
 - Defined and implemented the network that connects moving vehicles (embedded devices),
 network controllers and linux servers.
