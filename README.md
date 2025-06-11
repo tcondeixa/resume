@@ -96,3 +96,5 @@ _September 2014 - March 2017_
 - Amazon Web Services (AWS): [Solutions Architect
   Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/5L0GJR9C12BQ19KE)
   (Issued Nov 2018 - Expired Nov 2020)
+
+[comment]: # "generated with https://www.markdowntopdf.com/"
