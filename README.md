@@ -26,7 +26,8 @@ _August 2021 - Present_
   AWS Cloudformation stacks for 2000+ engineers, including validation, plan and deployment.
 - **Lead** the migration of Cloud Infrastructure access (Users and CI/CD) to Okta,
   including the **development** and **distribution** of a golang CLI used daily by 2000+ users.
-- **Coordinate** Cyberweek preparations with entire organization representing Infrastructure.
+- **Coordinate** Cyberweek preparations with the entire company
+  by representing the Infrastructure Organization.
 - **Designed** and **Implemented** a solution to create, update and rotate application
   tokens for 1000+ applications, saving 500+ hours per month of Engineers time and
   reducing the amount of related incidents by 10%.
