@@ -17,7 +17,8 @@ Loki | Jenkins | PostgreSQL
 ### Zalando
 
 **Senior Software Engineer (Cloud Infrastructure)**
-<p align="right">_August 2021 - Present_</p>
+
+_August 2021 - Present_
 
 - **Lead** the migration of entire AWS central infrastructure to AWS Cloudformation,
   including the **Development** of a golang application to manage Cloudformation
