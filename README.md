@@ -22,10 +22,10 @@ _August 2021 - Present_
 - **Lead** the migration of entire AWS central infrastructure to AWS Cloudformation,
   including the **Development** of a golang application to manage Cloudformation
   stacks for 300+ accounts and multiple regions (apply, plan, validation).
-- **Designed** and **Implemented** a service to support the CI/CD by managing
+- **Designed** and **Implemented** a golang service to support the CI/CD by managing
   AWS Cloudformation stacks for 2000+ engineers, including validation, plan and deployment.
-- **Lead** the migration of Cloud Infrastructure access (Users and CI/CD) to Okta,
-  including the **development** and **distribution** of a golang CLI used daily by 2000+ users.
+- **Lead** the migration of Cloud Infrastructure access (Users and CI/CD) to Okta, including
+  the **development** and **distribution** of a golang CLI used daily by 2000+ engineers.
 - **Coordinate** Cyberweek preparations with the entire company
   by representing the Infrastructure Organization.
 - **Designed** and **Implemented** a solution to create, update and rotate application
