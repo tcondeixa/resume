@@ -1,24 +1,23 @@
 # Tiago Silvestre Condeixa
 
 Berlin, Germany | [tscondeixa@gmail.com](mailto:tscondeixa@gmail.com) |
-(+351) 916064732 | [linkedin](https://www.linkedin.com/in/tiagocondeixa/)
+(+351) 916064732 | [linkedin](https://www.linkedin.com/in/tiagocondeixa) |
+[github](https://github.com/tcondeixa)
 
-I'm a **Software Engineer** specializing in **Infrastructure** and **Cloud**.
-
-I enjoy to design and deliver **simple** and **reliable** solutions related with
-the **development lifecycle** and **infrastructure**,
-focusing on developer experience and operational excellence.
-
-I thrive on solving complex challenges and integrating new technologies
-that drive meaningful business impact.
+I'm a **Software Engineer** specializing in **Infrastructure**, **Cloud**, and **Developer Tools**.
+I enjoy designing and delivering **simple**, **reliable** solutions for the entire **development lifecycle**,
+with a focus on developer experience and operational excellence.
+I thrive on solving complex challenges and integrating technologies that drive meaningful business impact.
 
 ---
 
 ## Skills
 
-**Languages:** Go | Python | Bash | C
+**Software Development:**: IaC | Cloud | CI/CD | Automation | SRE | Networking | Microservices
 
-**Cloud & Infrastructure:** AWS | Kubernetes | Docker | Terraform | Jenkins | GitHub | Git
+**Languages:** Go | Python | Bash | C | SQL | JavaScript
+
+**Infrastructure:** AWS | Kubernetes | Terraform | Docker | Jenkins
 
 **Monitoring & Databases:** Grafana | Prometheus | Loki | PostgreSQL
 
@@ -45,8 +44,8 @@ Later also operating, improving and extending 200+ Kubernetes clusters.
   by representing the Infrastructure Organization.
 - **Designed** and **Implemented** a solution to create, update and rotate application
   tokens for 1000+ applications.
-- **Supported** the migration of 100+ self-managed Kubernetes clusters to IPv6 AWS EKS clusters,
-  including changes on the system to support multiple clusters per account.
+- **Supported** the migration of 100+ self-managed Kubernetes clusters to AWS EKS clusters (IPv6),
+  including changes on the system to support the migration and multiple clusters per account.
 
 ### Zenjob
 
@@ -109,14 +108,14 @@ and the related network infrastructure.
 
 - Linux Foundation: [Certified Kubernetes Application
   Developer](https://www.credly.com/badges/e453a458-8b9f-4691-b0ea-9afa00099d18)
-  (Issued Feb 2023 - Expires Feb 2026)
+  (Issued Feb 2023)
 
 - HashiCorp: [Certified Terraform
   Associate](https://www.credly.com/badges/55edd32e-4b41-464a-98da-46509ee7e717/linked_in_profile)
-  (Issued Jul 2020 - Expired Jul 2022)
+  (Issued Jul 2020)
 
 - Amazon Web Services (AWS): [Solutions Architect
   Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/5L0GJR9C12BQ19KE)
-  (Issued Nov 2018 - Expired Nov 2020)
+  (Issued Nov 2018)
 
 [comment]: # "generate with https://www.markdowntopdf.com/"
