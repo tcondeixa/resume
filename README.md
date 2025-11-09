@@ -3,13 +3,12 @@
 Berlin, Germany | [tscondeixa@gmail.com](mailto:tscondeixa@gmail.com) |
 (+351) 916064732 | [linkedin](https://www.linkedin.com/in/tiagocondeixa/)
 
-I’m a **Software Engineer** with a broader experience in **Infrastructure** and **Cloud**.
-I enjoy designing, implementing and delivering **simple solutions** related to
-the **development lifecycle**, **tools** and **infrastructure**,
-always having a focus on governance, availability, scalability and reliability.
-I'm always looking for challenges and opportunities to **learn**, so I find it very
-interesting to integrate new technologies or tools in the system
-whenever they bring business or technology advantage.
+I'm a **Software Engineer** specializing in **Infrastructure** and **Cloud**.
+I enjoy to design and deliver **simple** and **reliable** solutions related with
+the **development lifecycle** and **infrastructure**,
+focusing on developer experience and operational excellence.
+I thrive on solving complex challenges and integrating new technologies
+that drive meaningful business impact.
 
 ---
 
