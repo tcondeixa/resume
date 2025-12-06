@@ -5,15 +5,15 @@ Berlin, Germany | [tscondeixa@gmail.com](mailto:tscondeixa@gmail.com) |
 [github](https://github.com/tcondeixa)
 
 I'm a **Software Engineer** specializing in **Infrastructure**, **Cloud**, and **Developer Tools**.
-I enjoy designing and delivering **simple**, **reliable** solutions for the entire **development lifecycle**,
+I enjoy designing and delivering **simple**, **scalable** and **reliable** solutions for the entire **development lifecycle**,
 with a focus on developer experience and operational excellence.
 I thrive on solving complex challenges and integrating technologies that drive meaningful business impact.
 
 ---
 
-## Skills
+## Technical Skills
 
-**Software Development:**: IaC | Cloud | CI/CD | Automation | SRE | Networking | Microservices
+**Software Development:** IaC | Cloud | Containers | CI/CD | Automation | SRE | Networking | Microservices
 
 **Languages:** Go | Python | Bash | C | SQL | JavaScript
 
