@@ -42,7 +42,7 @@ Later also operating, improving and extending 200+ Kubernetes clusters.
   the **development** and **distribution** of a golang CLI used daily by 2000+ engineers.
 - **Coordinate** Cyberweek preparations with the entire company
   by representing the Infrastructure Organization.
-- **Designed** and **Implemented** a solution to create, update and rotate application
+- **Designed** and **Implemented** a golang solution to create, update and rotate application
   tokens for 1000+ applications.
 - **Supported** the migration of 100+ self-managed Kubernetes clusters to AWS EKS clusters (IPv6),
   including changes on the system to support the migration and multiple clusters per account.
