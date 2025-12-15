@@ -1,7 +1,7 @@
 # Tiago Silvestre Condeixa
 
 Berlin, Germany | [tscondeixa@gmail.com](mailto:tscondeixa@gmail.com) |
-(+351) 916064732 | [linkedin](https://www.linkedin.com/in/tiagocondeixa) |
+[linkedin](https://www.linkedin.com/in/tiagocondeixa) |
 [github](https://github.com/tcondeixa)
 
 I'm a **Software Engineer** specializing in **Infrastructure**, **Cloud**, and **Developer Tools**.
