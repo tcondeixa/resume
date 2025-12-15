@@ -1,0 +1,6 @@
+*.test
+*.out
+bin
+.ssh
+.DS_Store
+
