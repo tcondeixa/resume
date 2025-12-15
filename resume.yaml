@@ -60,7 +60,7 @@ experience:
       - "Coordinate Cyberweek preparations with the entire company by representing the Infrastructure Organization."
       - "Designed and Implemented a golang solution to create, update and rotate application tokens for 1000+ applications."
       - "Supported the migration of 100+ self-managed Kubernetes clusters to AWS EKS clusters (IPv6), including changes on the system to support the migration and support multiple clusters per account."
-  - company: Zenjob
+  - company: "Zenjob"
     title: "Senior Software Engineer (Platform)"
     start_date: "January 2019"
     end_date: "July 2021"
@@ -72,7 +72,7 @@ experience:
       - "Deployed and maintained Kubernetes Clusters (AWS EKS and Istio) and out-of-the-box Observability with Loki, Prometheus, Jaeger and Grafana."
       - "Provided Terraform modules to abstract complexity with out-of-the-box best practices."
 
-  - company: Veniam
+  - company: "Veniam"
     title: "Software Engineer (Infrastructure)"
     start_date: "April 2017"
     end_date: "December 2018"
@@ -83,7 +83,7 @@ experience:
       - "Maintained Nagios, InfluxDB and Grafana for monitoring and alerting."
       - "Provided and Operated the ELK stack for logging."
 
-  - company: Veniam
+  - company: "Veniam"
     title: "Systems Engineer (Embedded and Network)"
     start_date: "September 2014"
     end_date: "March 2017"
