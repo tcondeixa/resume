@@ -1,246 +1,68 @@
-<<<<<<< HEAD
-||||||| d7eaedb
-# Tiago Silvestre Condeixa
+# Resume SSH Server
 
-Berlin, Germany | [tscondeixa@gmail.com](mailto:tscondeixa@gmail.com) |
-(+351) 916064732 | [linkedin](https://www.linkedin.com/in/tiagocondeixa) |
-[github](https://github.com/tcondeixa)
+A Go application that serves your resume over SSH. Connect via SSH to view a beautifully formatted resume in your terminal.
 
-I'm a **Software Engineer** specializing in **Infrastructure**, **Cloud**, and **Developer Tools**.
-I enjoy designing and delivering **simple**, **scalable** and **reliable** solutions for the entire **development lifecycle**,
-with a focus on developer experience and operational excellence.
-I thrive on solving complex challenges and integrating technologies that drive meaningful business impact.
+## Overview
 
----
+This project creates an SSH server that displays your resume when users connect.
+The resume is defined in a YAML file and rendered according to the client's terminal capabilities.
 
-## Technical Skills
+## Features
 
-**Software Development:** IaC | Cloud | Containers | CI/CD | Automation | SRE | Networking | Microservices
+- SSH server for serving resumes
+- YAML-based resume configuration
+- Terminal-aware formatting
+- Configurable host and port
+- Host key authentication
 
-**Languages:** Go | Python | Bash | C | SQL | JavaScript
+## Installation
 
-**Infrastructure:** AWS | Kubernetes | Terraform | Docker | Jenkins
+```bash
+make
+```
 
-**Monitoring & Databases:** Grafana | Prometheus | Loki | PostgreSQL
+## Usage
 
-## Experience
+### Basic Usage
 
-### Zalando
+```bash
+./resume-server
+```
 
-**Senior Software Engineer (Cloud Infrastructure)**
-_August 2021 - Present_
+This starts the server on `0.0.0.0:22` using `./resume.yaml` as the resume file.
 
-Operating, improving and extending the AWS infrastructure for 300+ accounts.
-The main focus is on improving cost efficiency, reliability and compliance,
-while reducing toil and improving user experience for developers.
-Later also operating, improving and extending 200+ Kubernetes clusters.
+### Command Line Options
 
-- **Lead** the migration of entire AWS central infrastructure to AWS Cloudformation,
-  including the **development** of a golang application to manage Cloudformation
-  stacks for 300+ accounts and multiple regions (apply, plan, validation).
-- **Designed** and **Implemented** a golang service to support the CI/CD by managing
-  AWS Cloudformation stacks for 2000+ engineers, including validation, plan and deployment.
-- **Lead** the migration of Cloud Infrastructure access (Users and CI/CD) to Okta, including
-  the **development** and **distribution** of a golang CLI used daily by 2000+ engineers.
-- **Coordinate** Cyberweek preparations with the entire company
-  by representing the Infrastructure Organization.
-- **Designed** and **Implemented** a golang solution to create, update and rotate application
-  tokens for 1000+ applications.
-- **Supported** the migration of 100+ self-managed Kubernetes clusters to AWS EKS clusters (IPv6),
-  including changes on the system to support the migration and multiple clusters per account.
+```bash
+./resume --address "localhost:2222" --file-path "/path/to/my-resume.yaml"
+```
 
-### Zenjob
+**Flags:**
 
-**Senior Software Engineer (Platform)**
-_January 2019 - July 2021_
+- `-address`: Server address (default: `0.0.0.0:22`)
+- `-file-path`: Path to resume YAML file (default: `./resume.yaml`)
 
-Provided and improved a Developer Platform for 100+ Engineers to
-deploy, operate and monitor their applications.
+### Connecting to Your Resume
 
-- **Lead** the migration of 50+ Microservices to new Kubernetes clusters
-  (AWS EKS and Istio) with no downtime and with minimal engineer effort.
-- **Deployed** and **maintained** Jenkins CI/CD,
-  including abstractions in Groovy to deploy all common use-cases.
-- **Developed** a Python CLI to simplify the daily tasks for 100+ Engineers
-  interacting with the Platform.
-- **Deployed** and **maintained** Kubernetes Clusters (AWS EKS and Istio) and
-  out-of-the-box Observability with Loki, Prometheus, Jaeger and Grafana.
-- **Provided** Terraform modules to abstract complexity with out-of-the-box best
-  practices.
+Once the server is running, users can view your resume by connecting via SSH:
 
-### Veniam
+```bash
+ssh your-server-address
+```
 
-**Software Engineer (Infrastructure)**
-_April 2017 - December 2018_
+## Resume Configuration
 
-Operated and improved both the cloud and embedded infrastructure, as well as to
-provide a platform for 50+ engineers to deploy and monitor their applications.
+Create a `resume.yaml` file with your resume data.
+The exact structure depends on your `internal/resume` package implementation.
 
-- **Managed** AWS accounts and AWS services.
-- **Adopted** Terraform for infrastructure provisioning and Puppet for configuration management.
-- **Maintained** Nagios, InfluxDB and Grafana for monitoring and alerting.
-- **Provided** and **Operated** the ELK stack for logging.
+## Requirements
 
-**Systems Engineer (Embedded and Network)**
-_September 2014 - March 2017_
+- Go 1.19+
+- SSH host key (automatically generated at `.ssh/resume_ed25519`)
 
-Operated and improved the embedded network software for 500+ devices
-and the related network infrastructure.
+## Dependencies
 
-- **Developed** software solutions in C and some Python regarding mobility management, multihoming and
-  delay-tolerant communication for embedded devices and network controllers.
-  This included developing, improving or integrating network protocols, data caching,
-  opportunistic communications, connection manager, DHCP, Wireguard, Multipath TCP.
-- **Defined** and **configured** the network that connects moving vehicles (embedded devices),
-  network controllers and Linux servers.
-  Some examples include Linux distribution setup, OpenWRT, OpenVPN, network configuration and iptables.
-
----
-
-## Education and Certifications
-
-### University of Aveiro, Portugal
-
-- **PhD** in Electrical Engineering (2009 - 2014) with a
-  **PhD Scholarship** issued by Portuguese National Science Foundation.
-- **MSc** in Electronic and Telecommunications Engineering (2004 - 2009)
-  with a **Merit Scholarship** as one of the best students of 2008/2009.
-
-### Certifications
-
-- Linux Foundation: [Certified Kubernetes Application
-  Developer](https://www.credly.com/badges/e453a458-8b9f-4691-b0ea-9afa00099d18)
-  (Issued Feb 2023)
-
-- HashiCorp: [Certified Terraform
-  Associate](https://www.credly.com/badges/55edd32e-4b41-464a-98da-46509ee7e717/linked_in_profile)
-  (Issued Jul 2020)
-
-- Amazon Web Services (AWS): [Solutions Architect
-  Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/5L0GJR9C12BQ19KE)
-  (Issued Nov 2018)
-
-[comment]: # "generate with https://www.markdowntopdf.com/"
-=======
-# Tiago Silvestre Condeixa
-
-Berlin, Germany | [tscondeixa@gmail.com](mailto:tscondeixa@gmail.com) |
-[linkedin](https://www.linkedin.com/in/tiagocondeixa) |
-[github](https://github.com/tcondeixa)
-
-I'm a **Software Engineer** specializing in **Infrastructure**, **Cloud**, and **Developer Tools**.
-I enjoy designing and delivering **simple**, **scalable** and **reliable** solutions for the entire **development lifecycle**,
-with a focus on developer experience and operational excellence.
-I thrive on solving complex challenges and integrating technologies that drive meaningful business impact.
-
----
-
-## Technical Skills
-
-**Software Development:** IaC | Cloud | Containers | CI/CD | Automation | SRE | Networking | Microservices
-
-**Languages:** Go | Python | Bash | C | SQL | JavaScript
-
-**Infrastructure:** AWS | Kubernetes | Terraform | Docker | Jenkins
-
-**Monitoring & Databases:** Grafana | Prometheus | Loki | PostgreSQL
-
-## Experience
-
-### Zalando
-
-**Senior Software Engineer (Cloud Infrastructure)**
-_August 2021 - Present_
-
-Operating, improving and extending the AWS infrastructure for 300+ accounts.
-The main focus is on improving cost efficiency, reliability and compliance,
-while reducing toil and improving user experience for developers.
-Later also operating, improving and extending 200+ Kubernetes clusters.
-
-- **Lead** the migration of entire AWS central infrastructure to AWS Cloudformation,
-  including the **development** of a golang application to manage Cloudformation
-  stacks for 300+ accounts and multiple regions (apply, plan, validation).
-- **Designed** and **Implemented** a golang service to support the CI/CD by managing
-  AWS Cloudformation stacks for 2000+ engineers, including validation, plan and deployment.
-- **Lead** the migration of Cloud Infrastructure access (Users and CI/CD) to Okta, including
-  the **development** and **distribution** of a golang CLI used daily by 2000+ engineers.
-- **Coordinate** Cyberweek preparations with the entire company
-  by representing the Infrastructure Organization.
-- **Designed** and **Implemented** a golang solution to create, update and rotate application
-  tokens for 1000+ applications.
-- **Supported** the migration of 100+ self-managed Kubernetes clusters to AWS EKS clusters (IPv6),
-  including changes on the system to support the migration and multiple clusters per account.
-
-### Zenjob
-
-**Senior Software Engineer (Platform)**
-_January 2019 - July 2021_
-
-Provided and improved a Developer Platform for 100+ Engineers to
-deploy, operate and monitor their applications.
-
-- **Lead** the migration of 50+ Microservices to new Kubernetes clusters
-  (AWS EKS and Istio) with no downtime and with minimal engineer effort.
-- **Deployed** and **maintained** Jenkins CI/CD,
-  including abstractions in Groovy to deploy all common use-cases.
-- **Developed** a Python CLI to simplify the daily tasks for 100+ Engineers
-  interacting with the Platform.
-- **Deployed** and **maintained** Kubernetes Clusters (AWS EKS and Istio) and
-  out-of-the-box Observability with Loki, Prometheus, Jaeger and Grafana.
-- **Provided** Terraform modules to abstract complexity with out-of-the-box best
-  practices.
-
-### Veniam
-
-**Software Engineer (Infrastructure)**
-_April 2017 - December 2018_
-
-Operated and improved both the cloud and embedded infrastructure, as well as to
-provide a platform for 50+ engineers to deploy and monitor their applications.
-
-- **Managed** AWS accounts and AWS services.
-- **Adopted** Terraform for infrastructure provisioning and Puppet for configuration management.
-- **Maintained** Nagios, InfluxDB and Grafana for monitoring and alerting.
-- **Provided** and **Operated** the ELK stack for logging.
-
-**Systems Engineer (Embedded and Network)**
-_September 2014 - March 2017_
-
-Operated and improved the embedded network software for 500+ devices
-and the related network infrastructure.
-
-- **Developed** software solutions in C and some Python regarding mobility management, multihoming and
-  delay-tolerant communication for embedded devices and network controllers.
-  This included developing, improving or integrating network protocols, data caching,
-  opportunistic communications, connection manager, DHCP, Wireguard, Multipath TCP.
-- **Defined** and **configured** the network that connects moving vehicles (embedded devices),
-  network controllers and Linux servers.
-  Some examples include Linux distribution setup, OpenWRT, OpenVPN, network configuration and iptables.
-
----
-
-## Education and Certifications
-
-### University of Aveiro, Portugal
-
-- **PhD** in Electrical Engineering (2009 - 2014) with a
-  **PhD Scholarship** issued by Portuguese National Science Foundation.
-- **MSc** in Electronic and Telecommunications Engineering (2004 - 2009)
-  with a **Merit Scholarship** as one of the best students of 2008/2009.
-
-### Certifications
-
-- Linux Foundation: [Certified Kubernetes Application
-  Developer](https://www.credly.com/badges/e453a458-8b9f-4691-b0ea-9afa00099d18)
-  (Issued Feb 2023)
-
-- HashiCorp: [Certified Terraform
-  Associate](https://www.credly.com/badges/55edd32e-4b41-464a-98da-46509ee7e717/linked_in_profile)
-  (Issued Jul 2020)
-
-- Amazon Web Services (AWS): [Solutions Architect
-  Associate](https://cp.certmetrics.com/amazon/en/public/verify/credential/5L0GJR9C12BQ19KE)
-  (Issued Nov 2018)
-
-[comment]: # "generate with https://www.markdowntopdf.com/"
->>>>>>> 8ffaf32dd6985d3cf40ca85cdcd3bd74b9688cb1
+- `github.com/charmbracelet/log`
+- `github.com/charmbracelet/ssh`
+- `github.com/charmbracelet/wish`
+- `github.com/yaml/go-yaml`
