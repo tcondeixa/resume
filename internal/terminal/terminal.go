@@ -10,11 +10,10 @@ import (
 )
 
 const (
-	bellChar = "\x07"
-	escChar  = "\x1b"
-	csi      = escChar + "["
-	FG       = 38
-	BG       = 48
+	escChar = "\x1b"
+	csi     = escChar + "["
+	FG      = 38
+	BG      = 48
 
 	invertColors = csi + "7m"
 	resetColors  = csi + "m"
@@ -24,36 +23,35 @@ const (
 	unblink      = csi + "25m"
 	newLine      = "\r\n"
 
-	leftFrame        = "  ┃"
-	leftMargin       = leftFrame + "    "
-	rightFrame       = "┃  "
-	rightMargin      = "    " + rightFrame
-	leftUpperCorner  = "  ┏"
-	rightUpperCorner = "┓  "
-	leftLowerCorner  = "  ┗"
-	rightLowerCorner = "┛  "
+	outerSpace       = "   "
+	innerSpace       = "    "
+	leftFrame        = outerSpace + "┃"
+	leftMargin       = leftFrame + innerSpace
+	rightFrame       = "┃" + outerSpace
+	rightMargin      = innerSpace + rightFrame
+	leftUpperCorner  = outerSpace + "┏"
+	rightUpperCorner = "┓" + outerSpace
+	leftLowerCorner  = outerSpace + "┗"
+	rightLowerCorner = "┛" + outerSpace
 )
+
+var nonTextSpace = utf8.RuneCountInString(leftMargin + rightMargin)
 
 type Terminal struct {
 	Width  int
 	Height int
 	Term   string
+	Theme  catppuccin.Flavor
 }
 
 func (t *Terminal) Render(r *resume.Resume) (string, error) {
-	theme := catppuccin.Mocha
 	builder := strings.Builder{}
-	builder.Grow(100)
+	builder.Grow(200)
 
-	emptyLine := leftFrame + strings.Repeat(" ", t.Width-len(leftFrame)-len(rightFrame)) + rightFrame + newLine
-	separatorLine := leftMargin + strings.Repeat("━", t.Width-len(leftMargin)-len(rightMargin)) + rightMargin + newLine
+	emptyLine := t.emptyLine()
+	separatorLine := t.separatorLine()
 
-	_, err := builder.WriteString(
-		leftUpperCorner + strings.Repeat(
-			"━",
-			t.Width-len(leftUpperCorner)-len(rightUpperCorner),
-		) + rightUpperCorner + newLine,
-	)
+	err := t.firstLine(&builder)
 	if err != nil {
 		return "", err
 	}
@@ -63,7 +61,7 @@ func (t *Terminal) Render(r *resume.Resume) (string, error) {
 		return "", err
 	}
 
-	err = Header(r, theme, t.Width, &builder)
+	err = t.Header(r, &builder)
 	if err != nil {
 		return "", err
 	}
@@ -73,7 +71,7 @@ func (t *Terminal) Render(r *resume.Resume) (string, error) {
 		return "", err
 	}
 
-	err = Skills(r, theme, t.Width, &builder)
+	err = t.Skills(r, &builder)
 	if err != nil {
 		return "", err
 	}
@@ -83,7 +81,7 @@ func (t *Terminal) Render(r *resume.Resume) (string, error) {
 		return "", err
 	}
 
-	err = Experience(r, theme, t.Width, &builder)
+	err = t.Experience(r, &builder)
 	if err != nil {
 		return "", err
 	}
@@ -93,7 +91,7 @@ func (t *Terminal) Render(r *resume.Resume) (string, error) {
 		return "", err
 	}
 
-	err = Education(r, theme, t.Width, &builder)
+	err = t.Education(r, &builder)
 	if err != nil {
 		return "", err
 	}
@@ -103,7 +101,7 @@ func (t *Terminal) Render(r *resume.Resume) (string, error) {
 		return "", err
 	}
 
-	err = Certifications(r, theme, t.Width, &builder)
+	err = t.Certifications(r, &builder)
 	if err != nil {
 		return "", err
 	}
@@ -113,13 +111,7 @@ func (t *Terminal) Render(r *resume.Resume) (string, error) {
 		return "", err
 	}
 
-	_, err = builder.WriteString(
-		leftLowerCorner +
-			strings.Repeat(
-				"━",
-				t.Width-len(leftLowerCorner)-len(rightLowerCorner),
-			) + rightLowerCorner + newLine,
-	)
+	err = t.lastLine(&builder)
 	if err != nil {
 		return "", err
 	}
@@ -129,7 +121,7 @@ func (t *Terminal) Render(r *resume.Resume) (string, error) {
 		return "", err
 	}
 
-	err = Footer(theme, t.Width, &builder)
+	err = t.Footer(&builder)
 	if err != nil {
 		return "", err
 	}
@@ -142,11 +134,11 @@ func (t *Terminal) Render(r *resume.Resume) (string, error) {
 	return builder.String(), nil
 }
 
-func Footer(theme catppuccin.Flavor, width int, builder *strings.Builder) error {
-	text := "  by tcondeixa: https://github.com/tcondeixa/resume"
-	pad := paddingStr(width, utf8.RuneCountInString(text)+6)
-	text = Blink("  by tcondeixa: ") + FgColor("https://github.com/tcondeixa/resume", theme.Blue())
-	_, err := builder.WriteString(pad + text + "      " + newLine)
+func (t *Terminal) Footer(builder *strings.Builder) error {
+	text := "  by tcondeixa: https://github.com/tcondeixa/resume" + rightMargin
+	pad := t.paddingStr(text)
+	text = Blink("  by tcondeixa: ") + FgColor("https://github.com/tcondeixa/resume", t.Theme.Blue())
+	_, err := builder.WriteString(pad + text + strings.Repeat(" ", utf8.RuneCountInString(rightMargin)) + newLine)
 	if err != nil {
 		return err
 	}
@@ -154,11 +146,11 @@ func Footer(theme catppuccin.Flavor, width int, builder *strings.Builder) error 
 	return nil
 }
 
-func Header(r *resume.Resume, theme catppuccin.Flavor, width int, builder *strings.Builder) error {
-	emptyLine := leftFrame + strings.Repeat(" ", width-len(leftFrame)-len(rightFrame)) + rightFrame + newLine
-	pad := paddingStr(width, len(leftMargin)+len(rightMargin)+len(r.Header.Name))
+func (t *Terminal) Header(r *resume.Resume, builder *strings.Builder) error {
+	emptyLine := t.emptyLine()
+	pad := t.paddingStr(leftMargin + r.Header.Name + rightMargin)
 	_, err := builder.WriteString(
-		leftMargin + FgColor(Blink(strings.ToUpper(r.Header.Name)), theme.Green()) + pad + rightMargin + newLine,
+		leftMargin + FgColor(Blink(strings.ToUpper(r.Header.Name)), t.Theme.Green()) + pad + rightMargin + newLine,
 	)
 	if err != nil {
 		return err
@@ -169,8 +161,8 @@ func Header(r *resume.Resume, theme catppuccin.Flavor, width int, builder *strin
 		return err
 	}
 
-	for _, line := range splitTextLines(r.Header.Summary, width-len(leftMargin)-len(rightMargin)) {
-		pad := paddingStr(width, len(leftMargin)+len(rightMargin)+len(line))
+	for _, line := range splitTextLines(r.Header.Summary, t.Width-nonTextSpace) {
+		pad := t.paddingStr(leftMargin + line + rightMargin)
 		_, err = builder.WriteString(leftMargin + line + pad + rightMargin + newLine)
 		if err != nil {
 			return err
@@ -183,17 +175,17 @@ func Header(r *resume.Resume, theme catppuccin.Flavor, width int, builder *strin
 	}
 
 	location := " " + r.Header.Location
-	pad = paddingStr(width, len(leftMargin)+len(rightMargin)+utf8.RuneCountInString(location))
-	location = FgColor(Bold(" "), theme.Red()) + r.Header.Location
+	pad = t.paddingStr(leftMargin + location + rightMargin)
+	location = FgColor(Bold(" "), t.Theme.Red()) + r.Header.Location
 	_, err = builder.WriteString(leftMargin + location + pad + rightMargin + newLine)
 	if err != nil {
 		return err
 	}
 
 	for _, link := range r.Header.Links {
-		pad := paddingStr(width, len(leftMargin)+len(rightMargin)+utf8.RuneCountInString(link.Icon+" "+link.URL))
+		pad := t.paddingStr(leftMargin + link.Icon + " " + link.URL + rightMargin)
 		_, err = builder.WriteString(
-			leftMargin + link.Icon + " " + FgColor(link.URL, theme.Blue()) + pad + rightMargin + newLine,
+			leftMargin + link.Icon + " " + FgColor(link.URL, t.Theme.Blue()) + pad + rightMargin + newLine,
 		)
 		if err != nil {
 			return err
@@ -203,9 +195,9 @@ func Header(r *resume.Resume, theme catppuccin.Flavor, width int, builder *strin
 	return nil
 }
 
-func Skills(r *resume.Resume, theme catppuccin.Flavor, width int, builder *strings.Builder) error {
-	emptyLine := leftFrame + strings.Repeat(" ", width-len(leftFrame)-len(rightFrame)) + rightFrame + newLine
-	_, err := builder.WriteString(leftMargin + Title(theme, width, "Skills") + rightMargin + newLine)
+func (t *Terminal) Skills(r *resume.Resume, builder *strings.Builder) error {
+	emptyLine := t.emptyLine()
+	err := t.Title("Skills", builder)
 	if err != nil {
 		return err
 	}
@@ -217,19 +209,24 @@ func Skills(r *resume.Resume, theme catppuccin.Flavor, width int, builder *strin
 
 	for _, skill := range r.Skills {
 		aSkills := strings.Join(skill.Skills, " | ")
-		pad := paddingStr(width, len(leftMargin)+len(rightMargin)+len(skill.Area)+2+len(aSkills))
-		_, err := builder.WriteString(leftMargin + Bold(skill.Area) + ": " + aSkills + pad + rightMargin + newLine)
-		if err != nil {
-			return err
+
+		text := skill.Area + ": " + aSkills
+		for _, line := range splitTextLines(text, t.Width-nonTextSpace) {
+			pad := t.paddingStr(leftMargin + line + rightMargin)
+			line = strings.ReplaceAll(line, skill.Area, Bold(skill.Area))
+			_, err := builder.WriteString(leftMargin + line + pad + rightMargin + newLine)
+			if err != nil {
+				return err
+			}
 		}
 	}
 
 	return nil
 }
 
-func Experience(r *resume.Resume, theme catppuccin.Flavor, width int, builder *strings.Builder) error {
-	emptyLine := leftFrame + strings.Repeat(" ", width-len(leftFrame)-len(rightFrame)) + rightFrame + newLine
-	_, err := builder.WriteString(leftMargin + Title(theme, width, "Experience") + rightMargin + newLine)
+func (t *Terminal) Experience(r *resume.Resume, builder *strings.Builder) error {
+	emptyLine := t.emptyLine()
+	err := t.Title("Experience", builder)
 	if err != nil {
 		return err
 	}
@@ -242,9 +239,9 @@ func Experience(r *resume.Resume, theme catppuccin.Flavor, width int, builder *s
 		}
 
 		if exp.Company != previousCompany {
-			pad := paddingStr(width, len(leftMargin)+len(rightMargin)+len(exp.Company))
+			pad := t.paddingStr(leftMargin + exp.Company + rightMargin)
 			_, err := builder.WriteString(
-				leftMargin + FgColor(Bold(exp.Company), theme.Lavender()) + pad + rightMargin + newLine,
+				leftMargin + FgColor(Bold(exp.Company), t.Theme.Lavender()) + pad + rightMargin + newLine,
 			)
 			if err != nil {
 				return err
@@ -252,12 +249,32 @@ func Experience(r *resume.Resume, theme catppuccin.Flavor, width int, builder *s
 			previousCompany = exp.Company
 		}
 
-		pad := paddingStr(width, len(leftMargin)+len(rightMargin)+len(exp.Title)+len(exp.StartDate)+3+len(exp.EndDate))
-		_, err = builder.WriteString(
-			leftMargin + Bold(exp.Title) + pad + Bold(exp.StartDate+" - "+exp.EndDate) + rightMargin + newLine,
-		)
-		if err != nil {
-			return err
+		text := exp.Title + "      " + exp.StartDate + " - " + exp.EndDate
+		pad := t.paddingStr(leftMargin + text + rightMargin)
+		if pad != "" {
+			_, err = builder.WriteString(
+				leftMargin + Bold(exp.Title) + pad + Bold("      "+exp.StartDate+" - "+exp.EndDate) + rightMargin + newLine,
+			)
+			if err != nil {
+				return err
+			}
+		} else {
+			pad = t.paddingStr(leftMargin + exp.Title + rightMargin)
+			_, err = builder.WriteString(
+				leftMargin + Bold(exp.Title) + pad + rightMargin + newLine,
+			)
+			if err != nil {
+				return err
+			}
+
+			text := exp.StartDate + " - " + exp.EndDate
+			pad := t.paddingStr(leftMargin + text + rightMargin)
+			_, err = builder.WriteString(
+				leftMargin + Bold(text) + pad + rightMargin + newLine,
+			)
+			if err != nil {
+				return err
+			}
 		}
 
 		_, err = builder.WriteString(emptyLine)
@@ -265,8 +282,8 @@ func Experience(r *resume.Resume, theme catppuccin.Flavor, width int, builder *s
 			return err
 		}
 
-		for _, line := range splitTextLines(exp.Summary, width-len(leftMargin)-len(rightMargin)) {
-			pad := paddingStr(width, len(leftMargin)+len(rightMargin)+len(line))
+		for _, line := range splitTextLines(exp.Summary, t.Width-nonTextSpace) {
+			pad := t.paddingStr(leftMargin + line + rightMargin)
 			_, err = builder.WriteString(leftMargin + line + pad + rightMargin + newLine)
 			if err != nil {
 				return err
@@ -278,12 +295,13 @@ func Experience(r *resume.Resume, theme catppuccin.Flavor, width int, builder *s
 			return err
 		}
 
+		maxTextLineLen := t.Width - utf8.RuneCountInString(leftMargin+rightMargin)
 		for _, highlight := range exp.Highlights {
 			highlight = "■ " + highlight
-			for i, line := range splitTextLines(highlight, width-len(leftMargin)-len(rightMargin)) {
-				pad := paddingStr(width, len(leftMargin)+len(rightMargin)+utf8.RuneCountInString(line))
+			for i, line := range splitTextLines(highlight, maxTextLineLen) {
+				pad := t.paddingStr(leftMargin + line + rightMargin)
 				if i == 0 {
-					line = FgColor("■", theme.Lavender()) + line[1:]
+					line = FgColor("■", t.Theme.Lavender()) + line[1:]
 				}
 				_, err = builder.WriteString(leftMargin + line + pad + rightMargin + newLine)
 				if err != nil {
@@ -296,9 +314,9 @@ func Experience(r *resume.Resume, theme catppuccin.Flavor, width int, builder *s
 	return nil
 }
 
-func Education(r *resume.Resume, theme catppuccin.Flavor, width int, builder *strings.Builder) error {
-	emptyLine := leftFrame + strings.Repeat(" ", width-len(leftFrame)-len(rightFrame)) + rightFrame + newLine
-	_, err := builder.WriteString(leftMargin + Title(theme, width, "Education") + rightMargin + newLine)
+func (t *Terminal) Education(r *resume.Resume, builder *strings.Builder) error {
+	emptyLine := t.emptyLine()
+	err := t.Title("Education", builder)
 	if err != nil {
 		return err
 	}
@@ -309,7 +327,7 @@ func Education(r *resume.Resume, theme catppuccin.Flavor, width int, builder *st
 			return err
 		}
 
-		pad := paddingStr(width, len(leftMargin)+len(rightMargin)+len(edu.Institution))
+		pad := t.paddingStr(leftMargin + edu.Institution + rightMargin)
 		_, err := builder.WriteString(leftMargin + Bold(edu.Institution) + pad + rightMargin + newLine)
 		if err != nil {
 			return err
@@ -321,10 +339,12 @@ func Education(r *resume.Resume, theme catppuccin.Flavor, width int, builder *st
 		}
 
 		for _, achievement := range edu.Achievements {
-			pad := paddingStr(width, len(leftMargin)+len(rightMargin)+len(achievement))
-			_, err := builder.WriteString(leftMargin + achievement + pad + rightMargin + newLine)
-			if err != nil {
-				return err
+			for _, line := range splitTextLines(achievement, t.Width-nonTextSpace) {
+				pad := t.paddingStr(leftMargin + line + rightMargin)
+				_, err := builder.WriteString(leftMargin + line + pad + rightMargin + newLine)
+				if err != nil {
+					return err
+				}
 			}
 		}
 	}
@@ -332,9 +352,9 @@ func Education(r *resume.Resume, theme catppuccin.Flavor, width int, builder *st
 	return nil
 }
 
-func Certifications(r *resume.Resume, theme catppuccin.Flavor, width int, builder *strings.Builder) error {
-	emptyLine := leftFrame + strings.Repeat(" ", width-len(leftFrame)-len(rightFrame)) + rightFrame + newLine
-	_, err := builder.WriteString(leftMargin + Title(theme, width, "Certifications") + rightMargin + newLine)
+func (t *Terminal) Certifications(r *resume.Resume, builder *strings.Builder) error {
+	emptyLine := t.emptyLine()
+	err := t.Title("Certifications", builder)
 	if err != nil {
 		return err
 	}
@@ -346,29 +366,59 @@ func Certifications(r *resume.Resume, theme catppuccin.Flavor, width int, builde
 
 	for _, cert := range r.Certifications {
 		text := fmt.Sprintf("%s %s %s (%s)", cert.Link.Icon, cert.Name, cert.Authority, "Issued "+cert.Issued)
-		pad := paddingStr(width, len(leftMargin)+len(rightMargin)+utf8.RuneCountInString(text))
-		text = fmt.Sprintf(
-			"%s %s %s (%s)",
-			cert.Link.Icon,
-			Link(cert.Name, cert.Link.URL, theme),
-			Bold(cert.Authority),
-			"Issued "+cert.Issued,
-		)
-		_, err := builder.WriteString(leftMargin + text + pad + rightMargin + newLine)
-		if err != nil {
-			return err
+		for _, line := range splitTextLines(text, t.Width-nonTextSpace) {
+			pad := t.paddingStr(leftMargin + line + rightMargin)
+			line = strings.ReplaceAll(line, cert.Authority, Bold(cert.Authority))
+			line = strings.ReplaceAll(line, cert.Name, Link(cert.Name, cert.Link.URL, t.Theme))
+			_, err := builder.WriteString(leftMargin + line + pad + rightMargin + newLine)
+			if err != nil {
+				return err
+			}
 		}
 	}
 
 	return nil
 }
 
-func paddingStr(width int, usedLen int) string {
-	if usedLen >= width {
+func (t *Terminal) paddingStr(text string) string {
+	if utf8.RuneCountInString(text) >= t.Width {
 		return ""
 	}
 
-	return strings.Repeat(" ", width-usedLen)
+	return strings.Repeat(" ", t.Width-utf8.RuneCountInString(text))
+}
+
+func (t *Terminal) firstLine(builder *strings.Builder) error {
+	_, err := builder.WriteString(
+		leftUpperCorner + strings.Repeat(
+			"━",
+			t.Width-utf8.RuneCountInString(leftUpperCorner+rightUpperCorner),
+		) + rightUpperCorner + newLine,
+	)
+
+	return err
+}
+
+func (t *Terminal) lastLine(builder *strings.Builder) error {
+	_, err := builder.WriteString(
+		leftLowerCorner +
+			strings.Repeat(
+				"━",
+				t.Width-utf8.RuneCountInString(leftLowerCorner+rightLowerCorner),
+			) + rightLowerCorner + newLine,
+	)
+	return err
+}
+
+func (t *Terminal) emptyLine() string {
+	return leftFrame + strings.Repeat(" ", t.Width-utf8.RuneCountInString(leftFrame+rightFrame)) + rightFrame + newLine
+}
+
+func (t *Terminal) separatorLine() string {
+	return leftMargin + strings.Repeat(
+		"━",
+		t.Width-utf8.RuneCountInString(leftMargin+rightMargin),
+	) + rightMargin + newLine
 }
 
 func FgColor(text string, color catppuccin.Color) string {
@@ -396,9 +446,12 @@ func Link(text string, url string, theme catppuccin.Flavor) string {
 	return fmt.Sprintf("\033]8;;%s\033\\%s\033]8;;\033\\", url, FgColor(text, theme.Blue()))
 }
 
-func Title(theme catppuccin.Flavor, width int, title string) string {
-	pad := paddingStr(width, len(leftMargin)+len(rightMargin)+len(title))
-	return FgColor(Bold(title), theme.Red()) + pad
+func (t *Terminal) Title(title string, builder *strings.Builder) error {
+	text := leftMargin + title + rightMargin
+	_, err := builder.WriteString(
+		leftMargin + FgColor(Bold(title), t.Theme.Red()) + t.paddingStr(text) + rightMargin + newLine,
+	)
+	return err
 }
 
 func Blink(text string) string {
@@ -409,20 +462,38 @@ func Bold(text string) string {
 	return fmt.Sprintf("%s%s%s", bold, text, unbold)
 }
 
-func splitTextLines(text string, lineLen int) []string {
+func splitTextLines(text string, maxTextSize int) []string {
+	runes := []rune(text)
 	output := []string{}
 	i := 0
-	for i < len(text) {
-		end := min(i+lineLen, len(text))
-		if end == len(text) {
-			output = append(output, text[i:end])
+
+	for i < len(runes) {
+		end := min(i+maxTextSize, len(runes))
+
+		if end == len(runes) {
+			output = append(output, string(runes[i:end]))
 			break
 		}
-		for text[end] != ' ' && end < len(text) {
+
+		// Find last space within the chunk
+		originalEnd := end
+		for end > i && runes[end] != ' ' {
 			end--
 		}
-		output = append(output, text[i:end])
-		i += end + 1 - i
+
+		// If no space found, use original end (force break)
+		if end == i {
+			end = originalEnd
+		}
+
+		output = append(output, string(runes[i:end]))
+
+		// Skip the space if we broke on one
+		if end < len(runes) && runes[end] == ' ' {
+			end++
+		}
+
+		i = end
 	}
 
 	return output

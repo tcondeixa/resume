@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 
+	catppuccin "github.com/catppuccin/go"
 	"github.com/charmbracelet/log"
 	"github.com/tcondeixa/resume/internal/resume"
 	"github.com/tcondeixa/resume/internal/terminal"
@@ -13,7 +14,7 @@ import (
 	"github.com/yaml/go-yaml"
 )
 
-func buildResume() (*resume.Resume, error) {
+func loadResume() (*resume.Resume, error) {
 	content, err := os.ReadFile("resume.yaml")
 	if err != nil {
 		return nil, err
@@ -29,31 +30,29 @@ func buildResume() (*resume.Resume, error) {
 }
 
 func main() {
-	resume, err := buildResume()
-	if err != nil {
-		log.Errorf("Could not build the resume: %v", err)
-		os.Exit(1)
-	}
-
-	outputFormat := flag.String("format", "terminal", "output format")
+	outputFormat := flag.String("output-format", "terminal", "output format")
 	flag.Parse()
+
+	resume, err := loadResume()
+	if err != nil {
+		log.Fatalf("Could not load the resume: %v", err)
+	}
 
 	switch *outputFormat {
 	case "terminal":
 		term, err := getTerminalInfo()
 		if err != nil {
-			log.Errorf("Could not get terminal info: %v", err)
-			os.Exit(1)
+			log.Fatalf("Could not get terminal info: %v", err)
 		}
 
 		output, err := term.Render(resume)
 		if err != nil {
-			log.Errorf("Could not get the resume: %v", err)
-			os.Exit(1)
+			log.Fatalf("Could not render the resume: %v", err)
 		}
 
 		fmt.Print(output)
-		return
+	default:
+		log.Fatalf("Unknown output format: %s", *outputFormat)
 	}
 }
 
@@ -64,6 +63,7 @@ func getTerminalInfo() (*terminal.Terminal, error) {
 	}
 
 	return &terminal.Terminal{
+		Theme:  catppuccin.Mocha,
 		Term:   os.Getenv("TERM"),
 		Width:  width,
 		Height: height,

@@ -10,7 +10,7 @@ header:
     - icon: ""
       url: "https://www.linkedin.com/in/tiagocondeixa/"
     - icon: "󰣀"
-      url: "ssh cv.tiagocondeixa.com"
+      url: "ssh://cv.tiagocondeixa.com"
     - icon: "󰖟"
       url: "https://tiagocondeixa.com"
 

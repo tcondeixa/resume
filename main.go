@@ -5,6 +5,7 @@ import (
 	"flag"
 	"os"
 
+	catppuccin "github.com/catppuccin/go"
 	"github.com/charmbracelet/log"
 	"github.com/charmbracelet/ssh"
 	"github.com/charmbracelet/wish"
@@ -71,7 +72,7 @@ func main() {
 		log.Error("Could not start server", "error", err)
 	}
 
-	log.Info("Starting SSH server", "address", address)
+	log.Info("Starting SSH server", "address", *address)
 	if err = srv.ListenAndServe(); err != nil && !errors.Is(err, ssh.ErrServerClosed) {
 		log.Error("Could not start server", "error", err)
 	}
@@ -80,6 +81,7 @@ func main() {
 func getPTYInfo(session ssh.Session) (*terminal.Terminal, error) {
 	pty, _, _ := session.Pty()
 	return &terminal.Terminal{
+		Theme:  catppuccin.Mocha,
 		Term:   pty.Term,
 		Width:  pty.Window.Width,
 		Height: pty.Window.Height,
