@@ -298,11 +298,9 @@ func (t *Terminal) Experience(r *resume.Resume, builder *strings.Builder) error 
 		maxTextLineLen := t.Width - utf8.RuneCountInString(leftMargin+rightMargin)
 		for _, highlight := range exp.Highlights {
 			highlight = "■ " + highlight
-			for i, line := range splitTextLines(highlight, maxTextLineLen) {
+			for _, line := range splitTextLines(highlight, maxTextLineLen) {
 				pad := t.paddingStr(leftMargin + line + rightMargin)
-				if i == 0 {
-					line = FgColor("■", t.Theme.Lavender()) + line[1:]
-				}
+				line = strings.ReplaceAll(line, "■", FgColor("■", t.Theme.Lavender()))
 				_, err = builder.WriteString(leftMargin + line + pad + rightMargin + newLine)
 				if err != nil {
 					return err
