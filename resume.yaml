@@ -1,6 +1,6 @@
 header:
   name: "Tiago Silvestre Condeixa"
-  summary: "I'm a Software Engineer specializing in Infrastructure, Cloud, and Developer Tools. I enjoy designing and delivering simple, scalable and reliable solutions for the entire development lifecycle, with a focus on developer experience and operational excellence. I thrive on solving complex challenges and integrating technologies that drive meaningful business impact"
+  summary: "I'm a Software Engineer with 10+ years specializing in Infrastructure, Cloud, and Developer Tools. I enjoy designing and delivering simple, scalable and reliable solutions for the entire development lifecycle, focusing on developer experience and operational excellence. I thrive on solving complex challenges and integrating technologies that drive meaningful business impact"
   location: "Berlin, Germany"
   links:
     - icon: "󰇮"
@@ -25,6 +25,7 @@ skills:
       - "SRE"
       - "Networking"
       - "Microservices"
+      - "Operating Systems"
   - area: "Programming Languages"
     skills:
       - "Go"
@@ -52,25 +53,25 @@ experience:
     title: "Senior Software Engineer (Cloud Infrastructure)"
     start_date: "August 2021"
     end_date: "Present"
-    summary: "Operating, improving and extending the AWS infrastructure for 300+ accounts. The main focus is on improving cost efficiency, reliability and compliance,while reducing toil and improving user experience for developers. Later also operating, improving and extending 200+ Kubernetes clusters"
+    summary: "Manage and extend the AWS infrastructure for 300+ accounts and 200+ Kubernetes clusters. The main focus is on improving cost efficiency, reliability and compliance, while reducing toil and improving user experience for developers"
     highlights:
-      - "Lead the migration of entire AWS central infrastructure to AWS Cloudformation, including the development of a golang application to manage Cloudformation stacks for 300+ accounts and multiple regions (apply, plan, validation)."
-      - "Designed and Implemented a golang service to support the CI/CD by managing AWS Cloudformation stacks for 2000+ engineers, including validation, plan and deployment."
+      - "Lead the migration of entire AWS central infrastructure to AWS Cloudformation, including the development of a Golang application to manage Cloudformation stacks for 300+ accounts and multiple regions (apply, plan, validation)."
+      - "Designed and Developed a golang service to support the CI/CD by managing AWS Cloudformation stacks for 2000+ engineers, including validation, plan and deployment."
       - "Lead the migration of Cloud Infrastructure access (Users and CI/CD) to Okta, including the development and distribution of a golang CLI used daily by 2000+ engineers."
       - "Coordinate Cyberweek preparations with the entire company by representing the Infrastructure Organization."
-      - "Designed and Implemented a golang solution to create, update and rotate application tokens for 1000+ applications."
-      - "Supported the migration of 100+ self-managed Kubernetes clusters to AWS EKS clusters (IPv6), including changes on the system to support the migration and support multiple clusters per account."
+      - "Developed a golang application to create, update and refresh application tokens in AWS and Kubernetes Secrets for 1000+ applications."
+      - "Supported the migration of 100+ self-managed Kubernetes clusters to AWS EKS clusters (IPv6), including changes on the system to allow the migration and multiple clusters per account."
   - company: "Zenjob"
     title: "Senior Software Engineer (Platform)"
     start_date: "January 2019"
     end_date: "July 2021"
     summary: "Provided and improved a Developer Platform for 100+ Engineers to deploy, operate and monitor their applications."
     highlights:
-      - "Lead the migration of 50+ Microservices to new Kubernetes clusters (AWS EKS and Istio) with no downtime and with minimal engineer effort."
-      - "Deployed and maintained Jenkins CI/CD, including abstractions in Groovy to deploy all common use-cases."
+      - "Lead the migration of 50+ Microservices to Kubernetes clusters (AWS EKS and Istio)"
+      - "Managed Kubernetes Clusters (AWS EKS and Istio) and out-of-the-box Observability with Loki, Prometheus, Jaeger and Grafana."
+      - "Provided high level Terraform modules to abstract complexity with out-of-the-box best practices for a golden path"
+      - "Managed Jenkins CI/CD, including abstractions in Groovy to provide a golden path."
       - "Developed a Python CLI to simplify the daily tasks for 100+ Engineers interacting with the Platform."
-      - "Deployed and maintained Kubernetes Clusters (AWS EKS and Istio) and out-of-the-box Observability with Loki, Prometheus, Jaeger and Grafana."
-      - "Provided Terraform modules to abstract complexity with out-of-the-box best practices."
 
   - company: "Veniam"
     title: "Software Engineer (Infrastructure)"
@@ -78,7 +79,7 @@ experience:
     end_date: "December 2018"
     summary: "Operated and improved both the cloud and embedded infrastructure, as well as to provide a platform for 50+ engineers to deploy and monitor their applications."
     highlights:
-      - "Managed AWS accounts and AWS services."
+      - "Managed AWS accounts and AWS services (e.g. EC2, RDS, S3, IAM)"
       - "Adopted Terraform for infrastructure provisioning and Puppet for configuration management."
       - "Maintained Nagios, InfluxDB and Grafana for monitoring and alerting."
       - "Provided and Operated the ELK stack for logging."
@@ -87,10 +88,10 @@ experience:
     title: "Systems Engineer (Embedded and Network)"
     start_date: "September 2014"
     end_date: "March 2017"
-    summary: "Operated and improved the embedded network software for 500+ devices and the related network infrastructure."
+    summary: "Developed and Maintained the network related software for 500+ moving devices and backend infrastructure"
     highlights:
-      - "Developed software solutions in C and some Python regarding mobility management, multihoming and delay-tolerant communication for embedded devices and network controllers.This included developing, improving or integrating network protocols, data caching, opportunistic communications, connection manager, DHCP, Wireguard, Multipath TCP."
-      - "Defined and configured the network that connects moving vehicles (embedded devices), network controllers and Linux servers. Some examples include Linux distribution setup, OpenWRT, OpenVPN, network configuration and iptables."
+      - "Developed software solutions mainly in C (but also Python) regarding mobility management, multihoming and delay-tolerant communication for embedded devices and network controllers.This included developing, improving or integrating network protocols, data caching, opportunistic communications, connection manager, DHCP, Wireguard, Multipath TCP."
+      - "Defined and configured the network that connects moving vehicles (embedded devices), network controllers and Linux servers (e.g. Linux distribution setup, OpenWRT, OpenVPN, network configuration and iptables)."
 
 education:
   - institution: "University of Aveiro, Portugal"
